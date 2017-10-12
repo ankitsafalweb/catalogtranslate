@@ -16,7 +16,7 @@ Add the following lines into your composer.json
 ```
 or simply run this command 
 ```
-composer require elatebrain/catalogtranslate
+composer require "elatebrain/catalogtranslate:*"
 ```
  
 Then type the following commands from your Magento root:
