@@ -42,18 +42,9 @@ class Translate extends Command
         parent::__construct($name);
     }
 
-    /*public function __construct(
-        $name = null,
-        \Magento\Store\Model\StoreManagerInterface $storeManager
-    )
-    {
-        $this->_storeManager = $storeManager;
-        return parent::__construct($name);
-    }*/
-
     protected function configure()
     {
-        $this->setName('inchoo:hello_world')->setDescription('Prints hello world.');
+        $this->setName('elatebrain:catalogtranslate')->setDescription('Translate products and categories attributes.');
         $this->addArgument("source_store_view_code",InputArgument::REQUIRED,"Enter Source Store View Code for source language");
         $this->addArgument("target_store_view_code",InputArgument::REQUIRED,"Enter Target Store View Code for target language");
         $this->addArgument("type",InputArgument::REQUIRED,"Enter type as 'product' or 'category' to translate.");
