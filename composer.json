@@ -2,6 +2,9 @@
   "name": "elatebrain/catalogtranslate",
   "description": "Elatebrain Catalog translate extension",
   "require": {
+    "require": {
+      "php": "~5.5.0|~5.6.0|~7.0.0"
+    },
     "google/cloud-translate": "*"
   },
   "type": "magento2-module",
