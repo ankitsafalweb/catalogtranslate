@@ -1,0 +1,27 @@
+{
+  "name": "elatebrain/catalogtranslate",
+  "description": "Elatebrain Catalog translate extension",
+  "require": {
+    "mageplaza/module-core": "*",
+    "google/cloud-translate": "*"
+  },
+  "type": "magento2-module",
+  "version": "1.0.0",
+  "license": "Elatebrain License",
+  "authors": [
+    {
+      "name": "Ankit Patel",
+      "email": "ankit@elatebrain.com",
+      "homepage": "http://www.elatebrain.com",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Elatebrain\\Catalogtranslate\\": ""
+    }
+  }
+}

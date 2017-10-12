@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="catalogtranslate" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="0" showInStore="0">
+            <class>separator-top</class>
+            <label>ElateBrain Catalog Translator</label>
+            <tab>catalog</tab>
+            <resource>Mageplaza_Shopbybrand::configuration</resource>
+            <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Configuration</label>
+                <field id="api_key" translate="label comment" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Api key for Google Translate</label>
+                    <comment><![CDATA[Enter google api key here.]]></comment>
+                </field>
+                <field id="product_attributes" translate="label" type="multiselect" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Product Attributes</label>
+                    <source_model>Elatebrain\Catalogtranslate\Model\Config\Source\ProductAttributes</source_model>
+                    <comment><![CDATA[Select product <b>attribute(s)</b>. <br/>Only selected attributes will be translated.]]></comment>
+                </field>
+                <field id="category_attributes" translate="label" type="multiselect" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Category Attributes</label>
+                    <source_model>Elatebrain\Catalogtranslate\Model\Config\Source\CatagoryAttributes</source_model>
+                    <comment><![CDATA[Select category <b>attribute(s)</b>. <br/>Only selected attributes will be translated.]]></comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
