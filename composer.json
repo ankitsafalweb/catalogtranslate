@@ -2,7 +2,6 @@
   "name": "elatebrain/catalogtranslate",
   "description": "Elatebrain Catalog translate extension",
   "require": {
-    "mageplaza/module-core": "*",
     "google/cloud-translate": "*"
   },
   "type": "magento2-module",
